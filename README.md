@@ -1,4 +1,4 @@
-# CS2080_16Nov
+# CS2080 Lab 12
 
 This repo is supplemental to lab 12 where we were asked to get vs code running in a docker container. The requirements are as follows
   - Ubuntu docker image
