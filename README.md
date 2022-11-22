@@ -9,7 +9,8 @@ This repo is supplemental to lab 12 where we were asked to get vs code running i
 To use the created Dockerfile (seen in vs-code-image Dockerfile) I built an image using
 
   $ docker build -t vs-code-image .   
-  # Note, this only works in the contect directory "Lab12" since no path specified
+
+Note, this only works in the contect directory "Lab12" since no path specified.
 
 Then I started the container with
 
