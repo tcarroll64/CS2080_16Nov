@@ -1,5 +1,3 @@
-# Dockerfile 
-
 # The OS we want to use 
 FROM ubuntu
 
