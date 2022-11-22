@@ -1,0 +1,21 @@
+# vs-code-image Dockerfile 
+
+# The OS we want to use 
+FROM ubuntu
+
+# Installing zsh and curl
+RUN apt update \
+ && apt install -y \
+  zsh \
+  curl
+
+# Run command from website
+RUN curl -fsSL https://code-server.dev/install.sh | sh
+
+# Adding a user to vs code server
+RUN useradd -ms /bin/bash newuser
+
+USER newuser
+
+# Running code-server binary, specifing the bind address (public), and bypassing user authentication
+CMD [ "code-server", "--bind-addr", "0.0.0.0:8080", "--auth", "none" ]
