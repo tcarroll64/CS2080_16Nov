@@ -12,9 +12,10 @@ RUN apt update \
 # Run command from website to download code-server
 RUN curl -fsSL https://code-server.dev/install.sh | sh
 
-# Adding a user to vs code server
+# Adding a user to vs code server (creating home dir and setting shell name)
 RUN useradd -ms /bin/bash newuser
 
+# Starting vs code as 'newuser'
 USER newuser
 
 # Running code-server binary, specifing the bind address (public), and bypassing user authentication
