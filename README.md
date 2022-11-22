@@ -6,7 +6,7 @@ This repo is supplemental to lab 12 where we were asked to get vs code running i
     - https://github.com/coder/code-server Links to an external site. (using coder's code-server to accomplish task)
   - Zsh installed
 
-To use the created Dockerfile (seen in vs-code-image Dockerfile) I built an image using the command:
+To use the created Dockerfile (seen in CS2080_16Nov repo) I built an image using the command:
 
 $ docker build -t vs-code-image .   
 
