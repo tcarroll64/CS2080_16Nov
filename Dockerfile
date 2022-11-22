@@ -7,7 +7,7 @@ RUN apt update \
   zsh \
   curl
 
-# Run command from website to download code-server
+# Download code-server. Command from https://coder.com/docs/code-server/latest
 RUN curl -fsSL https://code-server.dev/install.sh | sh
 
 # Adding a user to vs code server (creating home dir and setting shell name)
